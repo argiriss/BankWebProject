@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_a01524
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
 =======
@@ -18,6 +19,9 @@
 =======
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
 >>>>>>> origin/Harrys
+=======
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+>>>>>>> origin/Thodoris
   </ItemGroup>
 
   <ItemGroup>
