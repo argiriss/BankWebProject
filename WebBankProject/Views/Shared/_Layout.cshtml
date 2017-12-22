@@ -1,6 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebBankProject</title>
@@ -33,6 +42,16 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li class="dropdown">
+                            <a asp-area="" asp-controller="" asp-action="">User</a>
+                            <div class="dropdown-content">
+                                <p><a asp-area="" asp-controller="User" asp-action="ViewAccount">View Account</a></p>
+                                <p><a asp-area="" asp-controller="User" asp-action="DepositToAdmin">Deposit to Admin</a></p>
+                                <p><a asp-area="" asp-controller="User" asp-action="DepositToUser">Deposit to User</a></p>
+                                <p><a asp-area="" asp-controller="User" asp-action="SendStatement">Sent to Statement</a></p>
+                            </div>
+                        
+                    </li>
                 </ul>
             </div>
         </div>

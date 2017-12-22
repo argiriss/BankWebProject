@@ -13,6 +13,31 @@ namespace WebBankProject.Controllers
             return View();
         }
 
+        public IActionResult DepositToAdmin()
+        {
+            return View();
+        }
+
+        public IActionResult DepositToUser()
+        {
+            return View();
+        }
+
+        public IActionResult SendStatement()
+        {
+            return View();
+        }
+
+        public IActionResult ViewAccount()
+        {
+            return View();
+        }
+
+
+
+
+
+
 
     }
 }
