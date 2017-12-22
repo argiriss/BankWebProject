@@ -42,6 +42,7 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+<<<<<<< Updated upstream
                     <li><a asp-action="Login" asp-controller="Home">Login</a></li>
 <<<<<<< HEAD
                     <li class="dropdown">
@@ -52,6 +53,20 @@
                                 <li><a asp-area="" asp-controller="User" asp-action="DepositToUser">Deposit to User</a></li>
                                 <li><a asp-area="" asp-controller="User" asp-action="SendStatement">Sent to Statement</a></li>
                             </ul>
+=======
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="" asp-controller="Admin" asp-action="ViewInternal">View internal bank account</a></li>
+                            <li><a asp-area="" asp-controller="Admin" asp-action="ViewAny">View any bank account</a></li>
+                            <li><a asp-area="" asp-controller="Admin" asp-action="Deposit">Deposit to any user</a></li>
+                            <li><a asp-area="" asp-controller="Admin" asp-action="Withdraw">Withdraw from user</a></li>
+                            <li><a asp-area="" asp-controller="Admin" asp-action="AddFile">Add statement to file</a></li>
+                        </ul>
+>>>>>>> Stashed changes
                     </li>
                 </ul>
             </div>

@@ -8,9 +8,30 @@ namespace WebBankProject.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        public IActionResult ViewInternal()
         {
             return View();
         }
+
+        public IActionResult ViewAny()
+        {
+            return View();
+        }
+
+        public IActionResult Deposit()
+        {
+            return View();
+        }
+
+        public IActionResult Withdraw()
+        {
+            return View();
+        }
+
+        public IActionResult AddFile()
+        {
+            return View();
+        }
+
     }
 }
