@@ -42,20 +42,17 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-action="Login" asp-controller="Home">Login</a></li>
 <<<<<<< HEAD
                     <li class="dropdown">
                             <a asp-area="" asp-controller="" asp-action="">User</a>
-                            <div class="dropdown-content">
-                                <p><a asp-area="" asp-controller="User" asp-action="ViewAccount">View Account</a></p>
-                                <p><a asp-area="" asp-controller="User" asp-action="DepositToAdmin">Deposit to Admin</a></p>
-                                <p><a asp-area="" asp-controller="User" asp-action="DepositToUser">Deposit to User</a></p>
-                                <p><a asp-area="" asp-controller="User" asp-action="SendStatement">Sent to Statement</a></p>
-                            </div>
-                        
+                            <ul class="dropdown-content">
+                                <li><a asp-area="" asp-controller="User" asp-action="ViewAccount">View Account</a></li>
+                                <li><a asp-area="" asp-controller="User" asp-action="DepositToAdmin">Deposit to Admin</a></li>
+                                <li><a asp-area="" asp-controller="User" asp-action="DepositToUser">Deposit to User</a></li>
+                                <li><a asp-area="" asp-controller="User" asp-action="SendStatement">Sent to Statement</a></li>
+                            </ul>
                     </li>
-=======
-                    <li><a asp-action="Login" asp-controller="Home">Login</a></li>
->>>>>>> origin/Harrys
                 </ul>
             </div>
         </div>
