@@ -13,7 +13,6 @@ namespace WebBankProject.Controllers
             return View();
         }
 
-<<<<<<< Updated upstream
         public IActionResult DepositToAdmin()
         {
             return View();
@@ -33,14 +32,5 @@ namespace WebBankProject.Controllers
         {
             return View();
         }
-
-
-
-
-
-
-=======
->>>>>>> Stashed changes
-
     }
 }

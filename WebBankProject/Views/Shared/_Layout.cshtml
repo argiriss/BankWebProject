@@ -27,46 +27,36 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebBankProject</a>
-            </div>
-            <div class="navbar-collapse collapse">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index" >WebBankProject</a>
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                     <li><a asp-action="Login" asp-controller="Home">Login</a></li>
-
-                    <li class="dropdown">
-                            <a asp-area="" asp-controller="" asp-action="">User</a>
-                            <ul class="dropdown-menu">
-                                <li><a asp-area="" asp-controller="User" asp-action="ViewAccount">View Account</a></li>
-                                <li><a asp-area="" asp-controller="User" asp-action="DepositToAdmin">Deposit to Admin</a></li>
-                                <li><a asp-area="" asp-controller="User" asp-action="DepositToUser">Deposit to User</a></li>
-                                <li><a asp-area="" asp-controller="User" asp-action="SendStatement">Sent to Statement</a></li>
-                            </ul>
+					
+					  <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">User<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-controller="User" asp-action="ViewAccount">View Account</a></li>
+                            <li><a asp-controller="User" asp-action="DepositToAdmin">Deposit to Admin</a></li>
+                            <li><a asp-controller="User" asp-action="DepositToUser">Deposit to User</a></li>
+                            <li><a asp-controller="User" asp-action="SendStatement">Sent to Statement</a></li>
+                        </ul>
                     </li>
                     
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a asp-area="" asp-controller="Admin" asp-action="ViewInternal">View internal bank account</a></li>
-                            <li><a asp-area="" asp-controller="Admin" asp-action="ViewAny">View any bank account</a></li>
-                            <li><a asp-area="" asp-controller="Admin" asp-action="Deposit">Deposit to any user</a></li>
-                            <li><a asp-area="" asp-controller="Admin" asp-action="Withdraw">Withdraw from user</a></li>
-                            <li><a asp-area="" asp-controller="Admin" asp-action="AddFile">Add statement to file</a></li>
+                            <li><a asp-controller="Admin" asp-action="ViewInternal">View internal bank account</a></li>
+                            <li><a asp-controller="Admin" asp-action="ViewAny">View any bank account</a></li>
+                            <li><a asp-controller="Admin" asp-action="Deposit">Deposit to any user</a></li>
+                            <li><a asp-controller="Admin" asp-action="Withdraw">Withdraw from user</a></li>
+                            <li><a asp-controller="Admin" asp-action="AddFile">Add statement to file</a></li>
                         </ul>
                     </li>
-                    
                 </ul>
-            </div>
         </div>
     </nav>
     <div class="container body-content">
