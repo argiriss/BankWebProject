@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using WebBankProject.Models;
+using WebBankProject.Models.Services;
 
 namespace WebBankProject
 {
@@ -27,12 +28,10 @@ namespace WebBankProject
         {
             //pass connection string from configuration file for dbcontext
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-            //Every time controller needs Iproductrepository we give him fakeproductrepository 
-            //so as to have some records to play.If later decide to use database we change fake 
-            //productrepository with database
-            //......services.AddTransient<IProductRepocitory, FakeProductRepository>();
-            //Add records from Database Entity framework
-            //services.AddTransient<IProductRepocitory, EfProductRepository>();
+            //User records from Database Entity framework injection
+            //Everytime you request a type of IUserRepository, you'll get a new instance 
+            //of the EFUserRepository. This is what transient means in this case. 
+            services.AddTransient<IUserRepository, EFUserRepository>();
             services.AddMvc();
         }
 

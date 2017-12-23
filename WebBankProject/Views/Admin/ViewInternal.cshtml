@@ -1,7 +1,11 @@
-﻿
+﻿@model IUserRepository
 @{
     ViewData["Title"] = "ViewInternal";
 }
 
 <h2>ViewInternal</h2>
 
+@foreach(var item in Model.Users)
+{
+    <p>@item.Username</p>
+}
